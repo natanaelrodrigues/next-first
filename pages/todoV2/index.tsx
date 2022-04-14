@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Todo } from "../../types/Todo";
+import Link from 'next/link';
 
 
 const Todo = () => {
@@ -24,7 +25,7 @@ const Todo = () => {
     return (
         <div>
             <h1>Lista de tarefas!!!</h1>
-
+            <Link href="/">Voltar</Link><br />
             {loding && <div>Carregando...</div>}
 
             <ul>
