@@ -11,7 +11,7 @@ const blog = ({posts}: Props) => {
 
             <ul> 
                 {posts.map((post, index)=>(
-                    <li key={index}>{post.title}</li>
+                    <li key={index}><a href={`/blog/${post.id}`}>{post.title}</a></li>
                 ))}
             </ul>
         </div>
