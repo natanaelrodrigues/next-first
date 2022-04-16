@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import { NavBar } from "../NavBar";
 import styles from './Layout.module.css'
 
 type Props = {
@@ -11,6 +12,7 @@ export const Layout = ({ children }: Props) => {
             <header className={styles.header}>
                 <h1>Meu projeto</h1>
             </header>
+            <NavBar />
             <main >
                 {children}
             </main>
