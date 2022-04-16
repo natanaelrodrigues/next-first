@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Home: NextPage = () => {
   const router = useRouter();
   return (
-      <div>
+      <div className='bg-blue-900'>
         <p>Pathname: {router.pathname}</p>
         <p>isFallback: {router.isFallback.toString()}</p>
         
